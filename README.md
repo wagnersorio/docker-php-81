@@ -42,6 +42,32 @@ MAILHOG_DASHBOARD_PORT=8025
 
 ```
 
+Edite o arquivo hosts e adicione a linha
+```sh
+127.0.0.1 example-app.local
+```
+
+
+Criar o arquivo de configuração do nginx
+```sh
+cp nginx/app01.conf example-app.conf
+```
+
+
+Editar o arquivo de configuração do nginx
+de:
+```sh
+server_name app01.local;
+root /var/www/app01/public;
+```
+
+
+para:
+```sh
+server_name example-app.local;
+root /var/www/example-app/public;
+```
+
 
 Suba os containers do projeto
 ```sh
@@ -54,15 +80,10 @@ Acessar o container
 docker-compose exec php bash
 ```
 
-
-Instalar as dependências do projeto
+Criar  o projeto
 ```sh
-composer install
+composer create-project laravel/laravel example-app
 ```
 
-
-Gerar a key do projeto Laravel
-```sh
-php artisan key:generate
-```
-
+Acessar o projeto
+[http://example-app:8989](http://example-app:8989)

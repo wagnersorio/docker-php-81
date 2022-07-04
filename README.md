@@ -50,7 +50,7 @@ Edite o arquivo hosts e adicione a linha
 
 Criar o arquivo de configuração do nginx
 ```sh
-cp nginx/app01.conf example-app.conf
+cp nginx/app01.conf nginx/example-app.conf
 ```
 
 

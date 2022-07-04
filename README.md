@@ -86,4 +86,4 @@ composer create-project laravel/laravel example-app
 ```
 
 Acessar o projeto
-[http://example-app:8989](http://example-app:8989)
+[http://example-app.local:8089](http://example-app.local:8089)

@@ -27,7 +27,7 @@ cp .env.example .env
 Atualize as variáveis de ambiente do arquivo .env
 ```dosini
 
-NGINX_HTTP_PORT=8089
+NGINX_HTTP_PORT=8989
 
 MYSQL_DATABASE=MYSQL_DB
 MYSQL_ROOT_PASSWORD=root
@@ -86,4 +86,4 @@ composer create-project laravel/laravel example-app
 ```
 
 Acessar o projeto
-[http://example-app.local:8089](http://example-app.local:8089)
+[http://example-app.local:8989](http://example-app.local:8989)
